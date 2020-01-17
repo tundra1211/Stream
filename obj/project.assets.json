@@ -11859,11 +11859,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\selig\\src\\Stream\\Stream.API\\Stream.API.csproj",
+      "projectUniqueName": "c:\\Users\\selig\\src\\Stream\\API\\Stream.API\\Stream.API.csproj",
       "projectName": "Stream.API",
-      "projectPath": "c:\\Users\\selig\\src\\Stream\\Stream.API\\Stream.API.csproj",
+      "projectPath": "c:\\Users\\selig\\src\\Stream\\API\\Stream.API\\Stream.API.csproj",
       "packagesPath": "C:\\Users\\selig\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\selig\\src\\Stream\\Stream.API\\obj\\",
+      "outputPath": "c:\\Users\\selig\\src\\Stream\\API\\Stream.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

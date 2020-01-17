@@ -26,3 +26,17 @@ C:\Users\selig\src\Stream\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.Assembly
 C:\Users\selig\src\Stream\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.RazorTargetAssemblyInfo.cache
 C:\Users\selig\src\Stream\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.dll
 C:\Users\selig\src\Stream\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.pdb
+C:\Users\selig\src\Stream\API\Stream.API\bin\Debug\netcoreapp2.1\Stream.API.deps.json
+C:\Users\selig\src\Stream\API\Stream.API\bin\Debug\netcoreapp2.1\Stream.API.runtimeconfig.json
+C:\Users\selig\src\Stream\API\Stream.API\bin\Debug\netcoreapp2.1\Stream.API.runtimeconfig.dev.json
+C:\Users\selig\src\Stream\API\Stream.API\bin\Debug\netcoreapp2.1\Stream.API.dll
+C:\Users\selig\src\Stream\API\Stream.API\bin\Debug\netcoreapp2.1\Stream.API.pdb
+C:\Users\selig\src\Stream\API\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.csprojAssemblyReference.cache
+C:\Users\selig\src\Stream\API\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.csproj.CoreCompileInputs.cache
+C:\Users\selig\src\Stream\API\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.RazorAssemblyInfo.cache
+C:\Users\selig\src\Stream\API\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.RazorAssemblyInfo.cs
+C:\Users\selig\src\Stream\API\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.AssemblyInfoInputs.cache
+C:\Users\selig\src\Stream\API\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.AssemblyInfo.cs
+C:\Users\selig\src\Stream\API\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.RazorTargetAssemblyInfo.cache
+C:\Users\selig\src\Stream\API\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.dll
+C:\Users\selig\src\Stream\API\Stream.API\obj\Debug\netcoreapp2.1\Stream.API.pdb
