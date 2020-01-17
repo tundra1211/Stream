@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Stream.API.Domain.Models;
 
-namespace StreamPractice.Persistence.Contexts
+namespace Stream.API.Persistence.Contexts
 {
     public class AppDbContext : DbContext
     {

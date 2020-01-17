@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Stream.API.Domain.Repositories;
+using Stream.API.Domain.Services;
+using Stream.API.Persistence.Contexts;
+using Stream.API.Persistence.Repositories;
+using Stream.API.Services;
 
 namespace Stream.API
 {
@@ -26,6 +25,13 @@ namespace Stream.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //Uses in memory database
+            services.AddDbContext<AppDbContext>(options => {
+                options.UseInMemoryDatabase("Stream-api-in-memory");
+            });
+            //bind service and repository
+            services.AddScoped<IResultRepository, ResultRepository>();
+            services.AddScoped<IResultsService, ResultService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
