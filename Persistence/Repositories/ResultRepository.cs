@@ -17,7 +17,10 @@ namespace Stream.API.Persistence.Repositories
 
         public async Task<IEnumerable<Result>> ListAsync()
         {
-            return await _context.Results.ToListAsync();
+            return await _context.Results.Include(R => R.Student).ToListAsync();
+
+                                               
+            
         }
 
         public async Task AddAsync(Result result)
