@@ -2,7 +2,7 @@ namespace Stream.API.Resources
 {
 public class StudentResource
     {
-        public string name;
-        public int Id;
+        public string name {get;set;}
+        public int Id {get;set;}
     }
 }

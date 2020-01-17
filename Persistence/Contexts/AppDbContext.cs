@@ -18,7 +18,7 @@ namespace Stream.API.Persistence.Contexts
             builder.Entity<Student>().HasKey(s => s.Id);
             builder.Entity<Student>().Property(s => s.Id).IsRequired().ValueGeneratedOnAdd();
             builder.Entity<Student>().Property(s => s.Name).IsRequired().HasMaxLength(50);
-            builder.Entity<Student>().HasOne(s => s.Result).WithOne(r => r.Student).HasForeignKey<Student>(s => s.Id);
+            builder.Entity<Student>().HasOne(s => s.Result).WithOne(r => r.Student).HasForeignKey<Result>(r => r.stdID);
             
             
             //Populate student list

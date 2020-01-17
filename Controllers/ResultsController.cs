@@ -41,9 +41,9 @@ namespace Stream.API.Controllers
 	if (!result.Success)
 		return BadRequest(result.Message);
 
-	var categoryResource = _mapper.Map<Result, ResultResource>(result.Result);
+	var resResource = _mapper.Map<Result, ResultResource>(result.Result);
     //Returns ok message with input 
-	return Ok(categoryResource);
+	return Ok(resResource);
         }
 }
 }
