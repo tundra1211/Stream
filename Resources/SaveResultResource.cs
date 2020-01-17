@@ -2,9 +2,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Stream.API.Resources
 {
-    public class SaveResource
+    public class SaveResultResource
     {
+        [Required]       
+        public int stdID {get;set;}
         [Required]
-        [MaxLength(30)]
-        public string Name { get; set; }
-   
+        [Range (0,100)]
+        public double score {get;set;}
+    }
+}

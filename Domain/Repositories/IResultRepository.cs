@@ -7,5 +7,6 @@ namespace Stream.API.Domain.Repositories
     public interface IResultRepository
     {
          Task<IEnumerable<Result>> ListAsync();
+         Task AddAsync(Result result);
     }
 }

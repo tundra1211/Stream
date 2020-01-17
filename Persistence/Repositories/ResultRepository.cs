@@ -19,5 +19,10 @@ namespace Stream.API.Persistence.Repositories
         {
             return await _context.Results.ToListAsync();
         }
+
+        public async Task AddAsync(Result result)
+	{
+		await _context.Results.AddAsync(result);
+	}
     }
 }

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using AutoMapper;
 using Stream.API.Resources;
+using Stream.API.Extensions;
 
 namespace Stream.API.Controllers
 {
@@ -26,6 +27,23 @@ namespace Stream.API.Controllers
             var results= await _resultsService.ListAsync();
             var resources = _mapper.Map<IEnumerable<Result>, IEnumerable<ResultResource>>(results);
             return resources;
+        }
+        //Handles posts api/results
+        [HttpPost]
+        public async Task<IActionResult> PostAsync([FromBody] SaveResultResource resource)
+        {
+            if (!ModelState.IsValid)
+		        return BadRequest(ModelState.GetErrorMessages());
+
+            var res = _mapper.Map<SaveResultResource, Result>(resource);
+            var result = await _resultsService.SaveAsync(res);
+
+	if (!result.Success)
+		return BadRequest(result.Message);
+
+	var categoryResource = _mapper.Map<Result, ResultResource>(result.Result);
+    //Returns ok message with input 
+	return Ok(categoryResource);
         }
 }
 }
