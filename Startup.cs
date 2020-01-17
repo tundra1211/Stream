@@ -33,8 +33,10 @@ namespace Stream.API
             //bind service and repository
             services.AddScoped<IResultRepository, ResultRepository>();
             services.AddScoped<IResultsService, ResultService>();
+            services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IStudentService, StudentService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+            
             services.AddAutoMapper(typeof(Startup));
         }
 
