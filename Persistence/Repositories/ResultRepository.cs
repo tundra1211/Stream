@@ -10,7 +10,7 @@ using Stream.API.Persistence.Contexts;
 
 namespace Stream.API.Persistence.Repositories
 {
-    public class ResultRepository : BaseRepository, IResultRepository
+    public class ResultRepository : BaseRepository, IResultRepository 
     {
 
         public ResultRepository(AppDbContext context) : base(context)
