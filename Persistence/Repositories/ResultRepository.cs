@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
+using System;
 using Microsoft.EntityFrameworkCore;
 using Stream.API.Domain.Models;
 using Stream.API.Domain.Repositories;
@@ -11,16 +12,16 @@ namespace Stream.API.Persistence.Repositories
 {
     public class ResultRepository : BaseRepository, IResultRepository
     {
+
         public ResultRepository(AppDbContext context) : base(context)
         {
         }
 
         public async Task<IEnumerable<Result>> ListAsync()
         {
-            return await _context.Results.Include(R => R.Student).ToListAsync();
-
-                                               
-            
+            Console.WriteLine("Test: "+ _context.Results.Select(R=>R.Student.Name));
+        return await _context.Results.Include(R =>R.Student).ToListAsync();
+  
         }
 
         public async Task AddAsync(Result result)

@@ -18,7 +18,7 @@ namespace Stream.API.Persistence.Contexts
             builder.Entity<Student>().HasKey(s => s.Id);
             builder.Entity<Student>().Property(s => s.Id).IsRequired().ValueGeneratedOnAdd();
             builder.Entity<Student>().Property(s => s.Name).IsRequired().HasMaxLength(50);
-            //Foreign Key on stdID
+            
             
             //Populate student list
            builder.Entity<Student>().HasData
@@ -38,6 +38,7 @@ namespace Stream.API.Persistence.Contexts
             builder.Entity<Result>().HasKey(r => r.Id);
             builder.Entity<Result>().Property(r => r.Id).IsRequired().ValueGeneratedOnAdd();          
             builder.Entity<Result>().Property(r => r.score).IsRequired();
+            //Foreign Key on stdID
             builder.Entity<Result>().HasOne(s => s.Student).WithOne(r => r.Result).HasForeignKey<Student>(s => s.Id);
 
             
