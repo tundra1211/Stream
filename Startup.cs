@@ -9,6 +9,7 @@ using Stream.API.Domain.Services;
 using Stream.API.Persistence.Contexts;
 using Stream.API.Persistence.Repositories;
 using Stream.API.Services;
+using AutoMapper;
 
 namespace Stream.API
 {
@@ -32,6 +33,8 @@ namespace Stream.API
             //bind service and repository
             services.AddScoped<IResultRepository, ResultRepository>();
             services.AddScoped<IResultsService, ResultService>();
+
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
