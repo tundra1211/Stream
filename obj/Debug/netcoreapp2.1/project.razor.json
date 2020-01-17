@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\selig\\src\\Stream.API\\Stream.API.csproj",
+  "FilePath": "c:\\Users\\selig\\src\\Stream\\Stream.API\\Stream.API.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2874,7 +2874,7 @@
     ],
     "CSharpLanguageVersion": 703
   },
-  "RootNamespace": "Stream.API",
+  "RootNamespace": null,
   "Documents": [],
   "SerializationFormat": "0.2"
 }
