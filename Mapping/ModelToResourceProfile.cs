@@ -2,7 +2,7 @@ using AutoMapper;
 using Stream.API.Domain.Models;
 using Stream.API.Resources;
 
-namespace Supermarket.API.Mapping
+namespace Stream.API.Mapping
 {
     public class ModelToResourceProfile : Profile
     {
