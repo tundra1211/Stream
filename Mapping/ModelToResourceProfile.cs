@@ -9,6 +9,7 @@ namespace Stream.API.Mapping
         public ModelToResourceProfile()
         {
             CreateMap<Result, ResultResource>();
+            CreateMap<Result, SaveResponseResource>();
             CreateMap<Student, StudentResource>();
         }
     }
