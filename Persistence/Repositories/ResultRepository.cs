@@ -20,7 +20,7 @@ namespace Stream.API.Persistence.Repositories
         public async Task<IEnumerable<Result>> ListAsync()
         {
         
-        return await _context.Results.Include(R =>R.Student).ToListAsync();
+        return await _context.Results.Include(R =>R.Student).OrderBy(r => r.Student.Id).ToListAsync();
   
         }
 
