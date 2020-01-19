@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Stream.API.Resources
 {
     public class SaveResultResource
-    {
+    {       
         [Required]       
         public int stdID {get;set;}
         [Required]
